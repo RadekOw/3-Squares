@@ -1,0 +1,70 @@
+.green_button,
+.blue_button,
+.yellow_button,
+.random_button,
+.reset_button_style,
+.theme_button_style,
+.palette_button_style {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.green_button { background-color: #a8e6a3; }
+.blue_button { background-color: #a3c9f1; }
+.yellow_button { background-color: #f9f59a; }
+.random_button { background-color: #e0e0e0; }
+.reset_button_style { background-color: #ffbaba; }
+.theme_button_style { 
+  background-color: #d3d3d3; 
+  position: fixed; 
+  right: 0; 
+  top: 0; 
+}
+.palette_button_style { background-color: #ddd; }
+
+.green_counter_box,
+.blue_counter_box,
+.yellow_counter_box,
+.random_counter_box {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.green_square,
+.blue_square,
+.yellow_square,
+.random_square,
+.palette_square {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: none;
+}
+
+.palette_container_style {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.button_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}

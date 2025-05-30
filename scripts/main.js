@@ -4,6 +4,7 @@ import { createYellowSquare } from "./yellow.js";
 import { updateCounter } from "./helpers/functions.js";
 import { createRandomSquare } from "./random.js";
 import { changeTheme } from "./helpers/functions.js";
+import { createPaletteSquare } from "./palette.js";
 
 const greenButton = document.getElementById("green");
 const blueButton = document.getElementById("blue");
@@ -87,26 +88,25 @@ const paletteContainer = document.getElementById("palette_container");
 const divPalette = document.getElementById("div_palette");
 
 // @ts-ignore
-paletteContainer.style.display = 'none';
+paletteContainer.style.display = "none";
 // @ts-ignore
-paletteContainer.style.position = 'fixed';
+paletteContainer.style.position = "fixed";
 // @ts-ignore
-paletteContainer.style.right = '100px';
+paletteContainer.style.right = "100px";
 // @ts-ignore
-paletteContainer.style.top = '100px';
+paletteContainer.style.top = "100px";
 // @ts-ignore
-paletteContainer.style.border = '3px solid black';
-palette?.addEventListener('click', () => {
+paletteContainer.style.border = "3px solid black";
+palette?.addEventListener("click", () => {
   // @ts-ignore
-  if(paletteContainer.style.display === 'none') {
+  if (paletteContainer.style.display === "none") {
     // @ts-ignore
-    paletteContainer.style.display = 'block';
+    paletteContainer.style.display = "block";
   } else {
     // @ts-ignore
-    paletteContainer.style.display = 'none';
+    paletteContainer.style.display = "none";
   }
-  
-})
+});
 
 const colorBox = document.createElement("div");
 colorBox.style.width = "30px";
@@ -114,19 +114,8 @@ colorBox.style.height = "30px";
 colorBox.style.backgroundColor = "blue";
 
 colorBox.addEventListener("click", () => {
-  // @ts-ignore
-  divPalette.style.width = "30px";
-  // @ts-ignore
-  divPalette.style.height = "30px";
-  // @ts-ignore
-  divPalette.style.backgroundColor = "blue";
-
+  createPaletteSquare('blue');
 });
-
-
-
-
-
 
 const colorBox2 = document.createElement("div");
 colorBox2.style.width = "30px";
@@ -134,12 +123,7 @@ colorBox2.style.height = "30px";
 colorBox2.style.backgroundColor = "green";
 
 colorBox2.addEventListener("click", () => {
-  // @ts-ignore
-  divPalette.style.width = "30px";
-  // @ts-ignore
-  divPalette.style.height = "30px";
-  // @ts-ignore
-  divPalette.style.backgroundColor = "green";
+  createPaletteSquare('green');
 });
 
 const colorBox3 = document.createElement("div");
@@ -148,12 +132,7 @@ colorBox3.style.height = "30px";
 colorBox3.style.backgroundColor = "yellow";
 
 colorBox3.addEventListener("click", () => {
-  // @ts-ignore
-  divPalette.style.width = "30px";
-  // @ts-ignore
-  divPalette.style.height = "30px";
-  // @ts-ignore
-  divPalette.style.backgroundColor = "yellow";
+  createPaletteSquare('yellow');
 });
 
 const colorBox4 = document.createElement("div");
@@ -162,12 +141,7 @@ colorBox4.style.height = "30px";
 colorBox4.style.backgroundColor = "red";
 
 colorBox4.addEventListener("click", () => {
-  // @ts-ignore
-  divPalette.style.width = "30px";
-  // @ts-ignore
-  divPalette.style.height = "30px";
-  // @ts-ignore
-  divPalette.style.backgroundColor = "red";
+  createPaletteSquare('red');
 });
 
 paletteContainer?.appendChild(colorBox);

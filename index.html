@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div style="display: flex">
-      <button id="green">Green</button>
-      <button id="blue">Blue</button>
-      <button id="yellow">Yellow</button>
-      <button id="random_color">Random Color</button>
-      <button id="palette">Palete</button>
-      <div id="palette_container"></div>
-      <div id="green_counter">0</div>
-      <div id="blue_counter">0</div>
-      <div id="yellow_counter">0</div>
-      <div id="random_counter">0</div>
+    <div class="button_row">
+      <button id="green" class="green_button">Green</button>
+      <button id="blue" class="blue_button">Blue</button>
+      <button id="yellow" class="yellow_button">Yellow</button>
+      <button id="random_color" class="random_button">Random Color</button>
+      <button id="palette" class="palette_button_style">Palette</button>
+
+      <div id="green_counter" class="green_counter_box">Green: 0</div>
+      <div id="blue_counter" class="blue_counter_box">Blue: 0</div>
+      <div id="yellow_counter" class="yellow_counter_box">Yellow: 0</div>
+      <div id="random_counter" class="random_counter_box">Random: 0</div>
     </div>
 
-    <div id="div_green"></div>
-    <div id="div_blue"></div>
-    <div id="div_yellow"></div>
-    <div id="div_random"></div>
-    <div id="div_palette"></div>
-    <button id="reset_button">Reset</button>
-    <button id="theme_button" style="position:fixed; right:0px; top:0px;">Theme</button>
-    
+    <div id="div_green" class="green_square"></div>
+    <div id="div_blue" class="blue_square"></div>
+    <div id="div_yellow" class="yellow_square"></div>
+    <div id="div_random" class="random_square"></div>
+    <div id="div_palette" class="palette_square"></div>
+
+    <button id="reset_button" class="reset_button_style">Reset</button>
+    <button id="theme_button" class="theme_button_style">Theme</button>
+
+    <div id="palette_container" class="palette_container_style"></div>
+
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
